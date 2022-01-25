@@ -15,7 +15,7 @@ export default function HomePage() {
       <Container>
 
         <div className={styles.container}>
-          <div className={styles.section}>
+          <div>
             <h5>TEDxKI is supported by a generous community of partners.</h5>
             <p>
               We are able to present our great range of events, activities, and materials thanks to their support and commitment. We work with organisations that share our enthusiasm for progressive ideas and their potential to change the world.
