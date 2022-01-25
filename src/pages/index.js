@@ -27,7 +27,7 @@ export default function HomePage({ data }) {
             <DateTimeLocation />
             <div>
               <h4>
-                CTRL+R, the symbol for refreshing - <br />How often have you been stuck on a page and had to restart your browser? We've all been there.
+                CTRL+R, the symbol for refreshing <br />How often have you been stuck on a page and had to restart your browser? We've all been there.
               </h4>
               <p>
                 But what if we're stuck in reality?<br />

@@ -15,7 +15,7 @@ export default function Navigation() {
 
       <ul className={styles.navigation}>
         <li className={styles.navigationItem}>
-          <Link to="/" activeClassName="active">
+          <Link to="/events/" activeClassName="active">
             Events
           </Link>
         </li>

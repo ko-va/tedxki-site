@@ -1,0 +1,48 @@
+.container {
+  margin: 5rem 0;
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 2rem;
+  justify-items: center;
+}
+
+.event_info {
+  text-align: center;
+}
+
+.speakers_container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 7rem;
+}
+
+.speaker {
+  display: grid;
+  grid-template-rows: auto;
+  align-items: center;
+}
+
+.speaker_photo {
+  width: 317px;
+  height: 317px;
+  border-radius: 50%;
+}
+
+.speaker_info {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .speaker {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 100px;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+
+}

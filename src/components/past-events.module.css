@@ -1,0 +1,10 @@
+.container {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.events {
+  margin: 3rem 0;
+  text-align: center;
+}
