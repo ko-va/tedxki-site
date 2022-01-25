@@ -1,0 +1,12 @@
+.container {
+  margin: 5rem 0;
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 2rem;
+  justify-items: center;
+}
+
+.bold {
+  color: black;
+  font-weight: var(--bold);
+}
