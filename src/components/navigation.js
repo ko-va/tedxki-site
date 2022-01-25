@@ -40,7 +40,7 @@ export default function Navigation() {
           </Link>
         </li>
         <li className={styles.navigationItem}>
-          <Link to="/blog/" activeClassName="active">
+          <Link to="/get-involved/" activeClassName="active">
             Get Involved
           </Link>
         </li>
