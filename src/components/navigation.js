@@ -1,27 +1,50 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from "react";
+import { Link } from 'gatsby';
+import logo from "../../static/images/logo.png";
 
 import * as styles from './navigation.module.css'
 
-const Navigation = () => (
-  <nav role="navigation" className={styles.container} aria-label="Main">
-    <Link to="/" className={styles.logoLink}>
-      <span className={styles.logo} />
-      <span className={styles.navigationItem}>Gatsby Starter Contentful</span>
-    </Link>
-    <ul className={styles.navigation}>
-      <li className={styles.navigationItem}>
-        <Link to="/" activeClassName="active">
-          Home
-        </Link>
-      </li>
-      <li className={styles.navigationItem}>
-        <Link to="/blog/" activeClassName="active">
-          Blog
-        </Link>
-      </li>
-    </ul>
-  </nav>
-)
+export default function Navigation() {
 
-export default Navigation
+  return (
+    <nav role="navigation" className={styles.container} aria-label="Main">
+
+      <Link to="/" className={styles.logoLink}>
+        <img className={styles.logo} src={logo} />
+      </Link>
+
+      <ul className={styles.navigation}>
+        <li className={styles.navigationItem}>
+          <Link to="/" activeClassName="active">
+            Events
+          </Link>
+        </li>
+        <li className={styles.navigationItem}>
+          <Link to="/blog/" activeClassName="active">
+            Sponsors
+          </Link>
+        </li>
+        <li className={styles.navigationItem}>
+          <Link to="/blog/" activeClassName="active">
+            Videos
+          </Link>
+        </li>
+        <li className={styles.navigationItem}>
+          <Link to="/blog/" activeClassName="active">
+            Speakers
+          </Link>
+        </li>
+        <li className={styles.navigationItem}>
+          <Link to="/blog/" activeClassName="active">
+            About
+          </Link>
+        </li>
+        <li className={styles.navigationItem}>
+          <Link to="/blog/" activeClassName="active">
+            Get Involved
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  )
+};

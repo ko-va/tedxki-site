@@ -1,0 +1,18 @@
+.button {
+  outline: none;
+  border: none;
+  filter: drop-shadow(0 0.5rem 0.30rem rgba(0, 0, 0, 0.15));
+  min-width: 150px;
+  padding: 1.5rem 2rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background-color: #ff0000;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: var(--bold);
+}
+
+.button > a:hover {
+  color: black;
+}
+

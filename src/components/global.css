@@ -34,6 +34,7 @@ body {
   margin: 0;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 img {
@@ -42,13 +43,38 @@ img {
 }
 
 h1,
-h2,
-h3,
-h4,
 h5,
 h6 {
   font-weight: var(--semibold);
   line-height: var(--dense);
+}
+
+h1 {
+  font-size: var(--text-5xl);
+}
+
+h2 {
+  font-size: var(--text-4xl);
+  font-weight: var(--medium);
+}
+
+h3 {
+  font-size: var(--text-3xl);
+  font-weight: var(--body);
+}
+
+h4 {
+  font-size: var(--text-2xl);
+  font-weight: var(--body);
+}
+
+h5 {
+  font-size: var(--text-xl);
+}
+
+h6{
+  font-size: var(--text-lg);
+  font-weight: var(--bold);
 }
 
 a {
@@ -62,6 +88,10 @@ a:hover {
 
 a.active {
   font-weight: var(--bold);
+}
+
+span {
+  color: var(--primary);
 }
 
 tt,

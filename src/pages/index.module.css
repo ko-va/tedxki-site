@@ -1,0 +1,97 @@
+.container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 6rem;
+  padding: 0 1rem;
+  justify-items: center;
+}
+
+hr {
+  margin: 5rem;
+}
+
+
+@media (max-width: 480px) {
+  .hero_image {
+    display: none;
+  }
+}
+
+
+.section {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 3rem;
+}
+
+.speakers_section {
+  justify-content: center;
+  display: grid;
+  grid-template-rows: auto;
+
+}
+
+.speaker {
+  display: grid;
+  grid-template-rows: auto;
+  justify-self: center;
+  text-align: center;
+}
+
+.speaker_photo {
+  justify-self: center;
+  height:200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.btn_container {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  justify-content: center;
+  grid-gap: 5rem;
+  margin-top: 2rem;
+
+}
+
+.getinvolved {
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 80%;
+    margin: 7rem auto;
+    grid-gap: 6rem;
+  }
+
+  .speakers_section {
+    grid-template-columns: repeat(2, auto);
+    grid-column-gap:5rem;
+    grid-row-gap: 20px;
+  }
+
+  .getinvolved {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 1000px;
+    margin: 7rem auto;
+    grid-gap: 6rem;
+  }
+
+  .speakers_section {
+    grid-template-columns: repeat(3, auto);
+    grid-column-gap:5rem;
+    grid-row-gap: 20px;
+  }
+}

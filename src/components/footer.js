@@ -6,9 +6,8 @@ import * as styles from './footer.module.css'
 const Footer = () => (
   <Container as="footer">
     <div className={styles.container}>
-      Built with <a href="https://contentful.com/">Contentful</a> and{' '}
-      <a href="https://gatsbyjs.com">Gatsby</a> &middot;{' '}
-      <a href="https://github.com/contentful/starter-gatsby-blog">Source</a>
+      TEDxKI {new Date().getFullYear()}.
+      This independent <a href="https://www.ted.com/about/programs-initiatives/tedx-program">TEDx</a> event is operated under license from <a href="https://www.ted.com/">TED</a>.
     </div>
   </Container>
 )
