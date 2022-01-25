@@ -30,7 +30,7 @@ export default function Navigation() {
           </Link>
         </li>
         <li className={styles.navigationItem}>
-          <Link to="/blog/" activeClassName="active">
+          <Link to="/speakers/" activeClassName="active">
             Speakers
           </Link>
         </li>

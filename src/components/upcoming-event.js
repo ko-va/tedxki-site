@@ -1,8 +1,7 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image";
-import Layout from '../components/layout'
-import Container from '../components/container'
+
 import DateTimeLocation from '../components/date-time-location'
 
 import * as styles from './upcoming-event.module.css'

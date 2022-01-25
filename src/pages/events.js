@@ -7,8 +7,6 @@ import Container from '../components/container'
 import UpcomingEventSection from '../components/upcoming-event'
 import PastEventsSection from '../components/past-events'
 
-import * as styles from './events.module.css'
-
 export default function HomePage({ data }) {
 
   return (
