@@ -10,7 +10,7 @@ export default function Navigation() {
     <nav role="navigation" className={styles.container} aria-label="Main">
 
       <Link to="/" className={styles.logoLink}>
-        <img className={styles.logo} src={logo} />
+        <img alt="logo" className={styles.logo} src={logo} />
       </Link>
 
       <ul className={styles.navigation}>
@@ -20,7 +20,7 @@ export default function Navigation() {
           </Link>
         </li>
         <li className={styles.navigationItem}>
-          <Link to="/blog/" activeClassName="active">
+          <Link to="/sponsors/" activeClassName="active">
             Sponsors
           </Link>
         </li>

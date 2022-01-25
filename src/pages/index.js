@@ -118,7 +118,6 @@ export default function HomePage({ data }) {
               <ButtonRed >
                 <Link to="/getinvolved">Get Involved</Link>
               </ButtonRed>
-
             </div>
             <h3>
               Do you want to be a part of our TEDxKI team?
