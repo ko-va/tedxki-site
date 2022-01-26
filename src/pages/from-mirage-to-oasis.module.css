@@ -1,0 +1,116 @@
+.container {
+  margin: 5rem 0;
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 2rem;
+  justify-items: center;
+}
+
+
+.video_gallery {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 2rem;
+  margin: 3rem auto;
+}
+
+.video {
+  position: relative;
+  max-width: 286px;
+  max-height: 286px;
+}
+
+.speakers {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 7rem;
+}
+
+.speaker {
+  display: grid;
+  grid-template-rows: auto;
+  align-items: center;
+}
+
+.speaker_photo {
+  width: 317px;
+  height: 317px;
+  border-radius: 50%;
+}
+
+.speaker_info {
+  text-align: center;
+}
+
+.performers {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.performer {
+  display: grid;
+  grid-template-rows: max-content min-content;
+  justify-content: center;
+  text-align: center;
+}
+
+.performer_photo {
+  width: 300px;
+  height: 317px;
+
+}
+
+
+.speaker_info {
+  padding: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: max-content min-content;
+}
+
+@media only screen and (min-width: 768px) {
+  .video_gallery {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 20px;
+    max-width: 768px;
+    margin: 3rem auto;
+  }
+
+  .video {
+    position: relative;
+    max-width: 386px;
+    max-height: 386px;
+  }
+
+  .speaker {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 100px;
+    align-items: center;
+  }
+
+  .performers {
+    grid-template-columns: repeat(3, 289px);
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .video_gallery {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 3rem auto;
+  }
+
+  .video {
+    position: relative;
+    max-width: 386px;
+    max-height: 386px;
+  }
+
+}
