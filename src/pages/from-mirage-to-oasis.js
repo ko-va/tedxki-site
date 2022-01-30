@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from 'gatsby'
 import Img from "gatsby-image";
 
 import Layout from '../components/layout'
@@ -47,7 +47,8 @@ export default function EventPage({ data }) {
                           alt={edge.node.speakersName}
                         />
                         <div className={styles.speaker_info} style={{ direction: 'ltr' }}>
-                          <h4>{edge.node.speakersName}</h4>
+                          <h4><Link to={edge.node.linkedInProfileLink} target="_blank" rel="noreferrer">{edge.node.speakersName}</Link></h4>
+                          <p className={styles.job_title}>{edge.node.jobTitle}</p>
                           <p>
                             {edge.node.speakersBio.childMarkdownRemark.internal.content}
                           </p>
@@ -127,6 +128,7 @@ export const query = graphql`
               ...GatsbyContentfulFluid
             }
           }
+          jobTitle
           speakersName
           speakersBio {
             childMarkdownRemark {
@@ -135,6 +137,7 @@ export const query = graphql`
               }
             }
           }
+          linkedInProfileLink
         }
       }
     }

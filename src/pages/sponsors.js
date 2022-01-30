@@ -21,7 +21,7 @@ export default function HomePage() {
               We are able to present our great range of events, activities, and materials thanks to their support and commitment. We work with organisations that share our enthusiasm for progressive ideas and their potential to change the world.
             </p>
             <h4>We are currently seeking sponsors for our TEDxKI2022 event. <br />
-              Please contact our Finance team for more information!
+              Please contact our finance team for more information!
             </h4>
             <div>
               <ButtonRed >

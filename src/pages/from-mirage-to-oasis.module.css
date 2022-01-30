@@ -92,6 +92,10 @@
     align-items: center;
   }
 
+  .job_title {
+    font-weight: bold;
+  }
+
   .performers {
     grid-template-columns: repeat(3, 289px);
   }

@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image";
 
 import DateTimeLocation from '../components/date-time-location'
@@ -18,6 +18,7 @@ export default function UpcomingEventSection() {
                 ...GatsbyContentfulFluid
               }
             }
+            jobTitle
             speakersName
             speakersBio {
               childMarkdownRemark {
@@ -26,6 +27,7 @@ export default function UpcomingEventSection() {
                 }
               }
             }
+            linkedInProfileLink
           }
         }
       }
@@ -44,14 +46,13 @@ export default function UpcomingEventSection() {
           But what if we're stuck in reality?
         </h4>
         <p>
-          Today more than ever, we are aware that sometimes we need to <span>#reload</span>, <span>#recharge</span>
-          or <span>#refresh</span> our lives, environment, and system. <br/>We are stuck between global crises like the
-          pandemic, recession and climate change. <br/>But, we are also in control of updating old systems to new realities!
+          Today more than ever, we are aware that sometimes we need to <span><Link to="https://www.instagram.com/p/CZRVKKIMhqL/" target="_blank" rel="noreferrer">#reload</Link></span>, <span>#recharge</span> or <span>#refresh</span> our lives, environment, and system.
+          <br/>We are stuck between global crises like the pandemic, recession and climate change.
+          <br/>But, we are also in control of updating old systems to new realities!
         </p>
         <p>
           Let's have a <span>#realtalk</span> about how we can create new beginnings and reinvent ourselves.<br />
-          With our brilliant speakers, dive in and hear stories that show true power and faith to <span>#reload</span>,
-          <span>#recharge</span>, and <span>#refresh</span>.
+          With our brilliant speakers, dive in and hear stories that show true power and faith to <span><Link to="https://www.instagram.com/p/CZRVKKIMhqL/" target="_blank" rel="noreferrer">#reload</Link></span>, <span>#recharge</span>, and <span>#refresh</span>.
         </p>
 
         <DateTimeLocation />
@@ -69,7 +70,8 @@ export default function UpcomingEventSection() {
                   alt={edge.node.speakersName}
                 />
                 <div className={styles.speaker_info} style={{ direction: 'ltr' }}>
-                  <h4>{edge.node.speakersName}</h4>
+                  <h4><Link to={edge.node.linkedInProfileLink} target="_blank" rel="noreferrer">{edge.node.speakersName}</Link></h4>
+                  <p className={styles.job_title}>{edge.node.jobTitle}</p>
                   <p>
                     {edge.node.speakersBio.childMarkdownRemark.internal.content}
                   </p>

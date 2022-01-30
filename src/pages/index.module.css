@@ -24,11 +24,27 @@ hr {
   grid-gap: 3rem;
 }
 
+.coming_up {
+  font-style: italic;
+}
+
+.event_title {
+  margin-bottom: 3rem;
+}
+
+.event_title > h2, h1{
+  margin: 0;
+}
+
 .speakers_section {
   justify-content: center;
   display: grid;
   grid-template-rows: auto;
 
+}
+
+.job_title {
+  font-weight: bold;
 }
 
 .speaker {
@@ -47,10 +63,8 @@ hr {
 
 .btn_container {
   display: grid;
-  grid-template-columns: min-content min-content;
   justify-content: center;
-  grid-gap: 5rem;
-  margin-top: 2rem;
+  margin: 3rem;
 
 }
 

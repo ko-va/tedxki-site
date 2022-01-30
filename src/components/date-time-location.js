@@ -8,7 +8,7 @@ export default function DateTimeLocation() {
     <div className={styles.container}>
       <div className={styles.icon}>
         <FontAwesomeIcon icon={faCalendarAlt} className="fas fa-camera fa-2x"/>
-        <h6>May 20 <br /> 2022</h6>
+        <h6>May 18 <br /> 2022</h6>
       </div>
       <div className={styles.icon}>
         <FontAwesomeIcon icon={faClock} className="fas fa-camera fa-2x" />

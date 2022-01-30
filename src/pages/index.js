@@ -1,9 +1,9 @@
 import React from "react"
-import { Parallax } from "react-parallax";
 import { graphql, Link } from 'gatsby'
-import { StaticImage } from "gatsby-plugin-image";
+import { Parallax } from "react-parallax";
 import Img from "gatsby-image"
 import Layout from '../components/layout'
+
 import Container from '../components/container'
 import DateTimeLocation from '../components/date-time-location'
 import ButtonRed from '../components/button-red'
@@ -12,6 +12,7 @@ import ButtonWhite from '../components/button-white'
 import * as styles from './index.module.css'
 
 import image1 from "../../static/images/hero.jpg"
+import image2 from "../../static/images/bckgrnd.svg"
 
 export default function HomePage({ data }) {
 
@@ -23,30 +24,29 @@ export default function HomePage({ data }) {
       </Parallax>
     </div>
 
+      <Parallax bgImage={image2} strength={200}>
       <Container>
         <div className={styles.container}>
           <div className={styles.section}>
-            <div>
+            <h5 className={styles.coming_up}>
+              <span>COMING UP</span>
+            </h5>
+            <div className={styles.event_title}>
               <h1 className="upcoming-event__title">
                 CTRL+R:
               </h1>
-              <h2>Updating old systems to new realities</h2>
+              <h2 className={styles.subtitle}>Updating old systems to new realities</h2>
             </div>
             <DateTimeLocation />
             <div>
               <h4>
-                CTRL+R, the symbol for refreshing <br />How often have you been stuck on a page and had to restart your browser? We've all been there.
+                CTRL+R, the symbol for refreshing: <br />How often have you been stuck on a page and had to restart your browser? We've all been there.
               </h4>
               <p>
-                But what if we're stuck in reality?<br />
-                Today more than ever, we are aware that sometimes we need to <span>#reload</span>, <span>#recharge</span>
-                or <span>#refresh</span> our lives, environment, and system. We are stuck between global crises like the
-                pandemic, recession and climate change. But, we are also in control of updating old systems to new realities!
+                But what if we're stuck in reality?<br />Today more than ever, we are aware that sometimes we need to <span><Link to="https://www.instagram.com/p/CZRVKKIMhqL/" target="_blank" rel="noreferrer">#reload</Link></span>, <span>#recharge</span> or <span>#refresh</span> our lives, environment, and system. We are stuck between global crises like the pandemic, recession and climate change. But, we are also in control of updating old systems to new realities!
               </p>
               <p>
-                Let's have a <span>#realtalk</span> about how we can create new beginnings and reinvent ourselves.<br />
-                With our brilliant speakers, dive in and hear stories that show true power and faith to <span>#reload</span>,
-                <span>#recharge</span>, and <span>#refresh</span>.
+                Let's have a <span>#realtalk</span> about how we can create new beginnings and reinvent ourselves.<br />With our brilliant speakers, dive in and hear stories that show true power and faith to <span><Link to="https://www.instagram.com/p/CZRVKKIMhqL/" target="_blank" rel="noreferrer">#reload</Link></span>, <span>#recharge</span>, and <span>#refresh</span>.
               </p>
             </div>
           </div>
@@ -62,7 +62,8 @@ export default function HomePage({ data }) {
                       alt={edge.node.speakersName}
                     />
                     <div>
-                      <p>{edge.node.speakersName}</p>
+                      <p><Link to={edge.node.linkedInProfileLink} target="_blank" rel="noreferrer">{edge.node.speakersName}</Link></p>
+                      <p className={styles.job_title}>{edge.node.jobTitle}</p>
                     </div>
                   </div>
                 )
@@ -71,16 +72,16 @@ export default function HomePage({ data }) {
 
             <div className={styles.btn_container}>
               <ButtonWhite>
-                <Link to="/events">Events</Link>
-              </ButtonWhite>
-
-              <ButtonWhite>
-                <Link to="/speakers"className="white-button">Speakers</Link>
+                <Link to="/events">See More</Link>
               </ButtonWhite>
             </div>
+
           </div>
         </div>
+        </Container>
+      </Parallax>
 
+        <Container>
         <div className={styles.container}>
           <div>
             <h1>
@@ -90,8 +91,8 @@ export default function HomePage({ data }) {
               TEDxKI is a platform for the propagation of Swedish ideas, creativity and innovation to the rest of the world.
             </h4>
             <p>
-              <span>TEDxKI</span> is a volunteer-run, non-profit organisation founded back in 2019.
-              We are an international team of 27 passionate people with diverse backgrounds in design,
+              <span>TEDxKI</span> is a volunteer-run, non-profit organisation founded back in 2020.
+              We are an international team of 25 passionate people with diverse backgrounds in design,
               innovation, marketing, finance, NGOs, business, and health. Our mission is to find and present the most
               exciting and original ideas that transcend limitations, classifications, and boundaries to create a
               better society. Through out the year we strive to deliver high quality content and inspire you for new
@@ -101,8 +102,7 @@ export default function HomePage({ data }) {
           <div>
             <h3 className="subtitle about-us__subtitle">What is TEDx?</h3>
             <p>
-              In the spirit of ideas worth spreading, <span>TED</span> has created a program called TEDx.
-              <span>TEDx</span> is a program of local, self-organized events that bring people together to share a
+              In the spirit of ideas worth spreading, <span>TED</span> has created a program called TEDx. <span>TEDx</span> is a program of local, self-organized events that bring people together to share a
               TED-like experience. Our event is called TEDxKI, where <span>x = independently organized TED event</span>.
             </p>
             <p>
@@ -124,7 +124,7 @@ export default function HomePage({ data }) {
           <div className={styles.getinvolved}>
             <div>
               <ButtonRed >
-                <Link to="/getinvolved">Get Involved</Link>
+                <Link to="/get-involved">Get Involved</Link>
               </ButtonRed>
             </div>
             <h3>
@@ -134,6 +134,7 @@ export default function HomePage({ data }) {
         </div>
 
       </Container>
+
     </Layout>
   );
 };
@@ -148,6 +149,7 @@ export const query = graphql`
               ...GatsbyContentfulFluid
             }
           }
+          jobTitle
           speakersName
           speakersBio {
             childMarkdownRemark {
@@ -156,6 +158,7 @@ export const query = graphql`
               }
             }
           }
+          linkedInProfileLink
         }
       }
     }

@@ -33,6 +33,10 @@
   text-align: center;
 }
 
+.job_title {
+  font-weight: bold;
+}
+
 @media only screen and (min-width: 768px) {
   .speaker {
     display: grid;

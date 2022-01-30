@@ -30,7 +30,7 @@ export default function SpeakersPage({ data }) {
                   />
                   <div className={styles.speaker_info}>
                     <h6>{edge.node.fullName}</h6>
-                    <a href={edge.node.linkedInProfileLink} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin}/></a>
+                    <a href={edge.node.linkedInProfileLink} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} className="fas fa-camera fa-2x"/></a>
                   </div>
                 </div>
               )

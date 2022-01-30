@@ -94,6 +94,10 @@ span {
   color: var(--primary);
 }
 
+.span_grey {
+  color: var(--inactive);
+}
+
 tt,
 code,
 kbd {

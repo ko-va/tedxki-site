@@ -24,7 +24,7 @@ export default function AboutPage() {
               <span>TEDxKI</span> was founded in 2020, to share ideas worth spreading and inspire the local community even in the middle of
               the pandemic. This year, as we are gradually getting how to cope with these new standards, we aim to organize and
               carry out the second TEDxKI to inspire society and provide new alternatives on how to keep hope alive and make dreams a
-              reality - especially during hard times. We are an international team of 27 curious and passionate humans who work together
+              reality - especially during hard times. We are an international team of 25 curious and passionate humans who work together
               to find the most exciting and original ideas that transcend limitations, classifications, and boundaries to create a
               society we all want to live in.
             </p>
@@ -41,7 +41,7 @@ export default function AboutPage() {
             <p>TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in
               California 30 years ago, TED has grown to support its mission with multiple initiatives. The two annual
               TED Conferences invite the world's leading thinkers and doers to speak for 18 minutes or less. Many of
-              these talks are then made available, free, at TED.com. TED speakers have included <span className={styles.bold}>Bill Gates</span>, <span className={styles.bold}>Jane Goodall</span>, <span className={styles.bold}>BElizabeth Gilbert</span>, <span className={styles.bold}>Sir Richard Branson</span>, <span className={styles.bold}>Nandan Nilekani</span>, <span className={styles.bold}>Philippe Starck</span>, <span className={styles.bold}>Ngozi Okonjo-Iweala</span>, <span className={styles.bold}>Sal Khan</span> and <span className={styles.bold}>Daniel Kahneman</span>.
+              these talks are then made available, free, at TED.com. TED speakers have included <span className={styles.bold}>Bill Gates</span>, <span className={styles.bold}>Jane Goodall</span>, <span className={styles.bold}>BElizabeth Gilbert</span>, <span className={styles.bold}>Sir Richard Branson</span>, <span className={styles.bold}>Nandan Nilekani</span>, <span className={styles.bold}>Philippe Starck</span>, <span className={styles.bold}>Ngozi Okonjo-Iweala</span>, <span className={styles.bold}>Sal Khan</span>, and <span className={styles.bold}>Daniel Kahneman</span>.
             </p>
             <p>The annual TED Conference takes place each spring in Vancouver, British Columbia. TED's media initiatives
               include TED.com, where new TED Talks are posted daily. TED Translators, which provides subtitles and
