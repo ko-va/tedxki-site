@@ -1,0 +1,11 @@
+
+.social_icons {
+  display: inline-grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 3rem;
+}
+
+.social_icons > a {
+  color: #494949;
+}
+

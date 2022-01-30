@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -8,7 +8,6 @@ import Layout from '../components/layout'
 import Container from '../components/container'
 
 import * as styles from './speakers.module.css'
-import Link from 'gatsby-link'
 
 export default function SpeakersPage({ data }) {
   return (
