@@ -1,4 +1,5 @@
 import React from "react"
+import { Parallax } from "react-parallax";
 import { graphql, Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image";
 import Img from "gatsby-image"
@@ -10,11 +11,18 @@ import ButtonWhite from '../components/button-white'
 
 import * as styles from './index.module.css'
 
+import image1 from "../../static/images/hero.jpg"
+
 export default function HomePage({ data }) {
 
   return (
-    <Layout>
-      <StaticImage src="../../static/images/hero.jpg" alt="hero-image" className={styles.hero_image} />
+  <Layout>
+    <div  className={styles.hero_image}>
+      <Parallax bgImage={image1} strength={200}>
+        <div style={{ height: 700 }} />
+      </Parallax>
+    </div>
+
       <Container>
         <div className={styles.container}>
           <div className={styles.section}>
