@@ -1,4 +1,5 @@
 import React from "react";
+import { StaticImage } from 'gatsby-plugin-image'
 
 import Layout from '../components/layout'
 import Container from '../components/container'
@@ -9,8 +10,8 @@ export default function AboutPage() {
 
   return (
     <Layout>
+      <StaticImage src="../../static/images/about.jpg" alt="about" />
       <Container>
-
         <div className={styles.container}>
           <div>
             <h1 className="home-page__title">

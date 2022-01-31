@@ -23,17 +23,17 @@ export default function GetInvolvedPage() {
             nominating a friend or becoming the next speaker, you can help create a stimulating day of inspiration!
           </h4>
 
-          <h6 className="home-page__subtitle">
-            <span><Link href="mailto:contact@tedxki.com">Become a volunteer ></Link></span>
-          </h6>
+          <div className="home-page__subtitle">
+            <span><Link href="mailto:contact@tedxki.com"><h6>Become a volunteer ></h6></Link></span>
+          </div>
 
-          <h6 className="home-page__subtitle">
-            <span>Nominate a <span className="span_grey">speaker</span> or a <Link href="mailto:contact@tedxki.com">performer</Link> ></span>
-          </h6>
+          <div className="home-page__subtitle">
+            <h6><span>Nominate a <span className="span_grey">speaker</span> or a <Link href="mailto:contact@tedxki.com">performer</Link> ></span></h6>
+          </div>
 
-          <h6 className="home-page__subtitle">
-            <span className="span_grey">Join the next event's team ></span>
-          </h6>
+          <div className="home-page__subtitle">
+            <h6><span className="span_grey">Join the next event's team ></span></h6>
+          </div>
 
         </div>
 
