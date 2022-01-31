@@ -24,15 +24,23 @@ export default function GetInvolvedPage() {
           </h4>
 
           <div className="home-page__subtitle">
-            <span><Link href="mailto:contact@tedxki.com"><h6>Become a volunteer ></h6></Link></span>
+            <h6><span><Link href="mailto:contact@tedxki.com">Become a volunteer ></Link></span></h6>
+            <p>
+              Fantastic that you would like to volunteer for TEDxKI and contribute to the community! Helpers are people from the KI community who provide additional support on the day of the event. Anyone can volunteer, and opportunities will be announced a few weeks before the event. Helpers are essential in smoothly organizing the event by helping team members and inspiring guests with enthusiasm.
+            </p>
           </div>
 
           <div className="home-page__subtitle">
-            <h6><span>Nominate a <span className="span_grey">speaker</span> or a <Link href="mailto:contact@tedxki.com">performer</Link> ></span></h6>
+            <span><h6>Nominate a speaker or a <Link href="#">performer ></Link></h6></span>
           </div>
 
           <div className="home-page__subtitle">
-            <h6><span className="span_grey">Join the next event's team ></span></h6>
+            <span><h6>Join the next event's team ></h6></span>
+            <p>
+              Positions on the teams become available each year and as needed. <br />
+              Depending on your experience and skills, there may be a team where you can contribute the most. We are looking for passionate people about TED, who have experience organizing events/activities/groups, and working in a multicultural environment.
+
+            </p>
           </div>
 
         </div>
