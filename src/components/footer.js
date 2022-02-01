@@ -14,8 +14,8 @@ const Footer = () => (
           <Link to="mailto:contact@tedxki.com"><span>contact@tedxki.com</span></Link>
         </div>
 
-        <div className="social-icons__section sub-item sub-item-2">
-          <p>Follow</p>
+        <div className={styles.social_icons}>
+          <p className={styles.follow_title}>Follow</p>
           <SocialIcons />
         </div>
       </div>
