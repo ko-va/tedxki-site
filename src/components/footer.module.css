@@ -20,9 +20,16 @@
 
 .item1 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
 }
 
-.item2 {
-  margin: 5rem;
+@media (min-width: 767px) {
+  .item1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .item2 {
+    margin: 5rem;
+  }
+
 }
