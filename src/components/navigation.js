@@ -8,15 +8,25 @@ import * as styles from './navigation.module.css'
 
 export default function Navigation() {
 
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(0);
+
   const breakPoint = 860;
 
   useEffect(() => {
-    const handleMenuMode = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleMenuMode);
 
+    if (!window) {
+      return;
+    }
+    setWidth(window.innerWidth);
+    const handleMenuMode = () => {
+      if (window) {
+        setWidth(window.innerWidth);
+      }
+    }
+
+    window.addEventListener("resize", handleMenuMode);
     return () => window.removeEventListener("resize", handleMenuMode);
-  },[]);
+  }, []);
 
   return (
     <nav role="navigation" className={styles.container} aria-label="Main">
