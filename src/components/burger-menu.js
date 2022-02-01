@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {Link} from "gatsby";
 
 const MobileMenuStyles = styled.div`
+  overflow-x: hidden;
 `
 
 const MenuIcon = styled.button`
@@ -71,10 +72,6 @@ const MenuLinks = styled.nav`
       color: red;
     }
   }
-
-  .burger-menu__MenuLinks-sc-ldpbp6-2 eUfsKI {
-    z-index: 10;
-  }
 `
 
 export default function BurgerMenu() {
@@ -91,11 +88,10 @@ export default function BurgerMenu() {
       </MenuIcon>
       <MenuLinks nav={nav}>
         <ul>
-          <li><Link to="/">Home</Link></li>
           <li><Link to="/events">Events</Link></li>
-          <li><Link to="/speakers">Sponsors</Link></li>
+          <li><Link to="/sponsors">Sponsors</Link></li>
           <li><Link to="/videos">Videos</Link></li>
-          <li><Link to="/sponsors">Speakers</Link></li>
+          <li><Link to="/speakers">Speakers</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/get-involved">Get Involved</Link></li>
         </ul>
