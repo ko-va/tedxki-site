@@ -45,28 +45,33 @@ const MenuLinks = styled.nav`
   text-align: center;
   height: 100vh;
   width: 100%;
-  background: rgba(255, 255, 255, 0.74);
+  background: rgba(255, 255, 255, 0.8);
   position: absolute;
   top: 0;
   right: 0;
   transition: transform 300ms;
-  transform: ${({nav}) => nav ? "translateX(0)": "translateX(100%)" };
+  transform: ${({ nav }) => nav ? "translateX(0)" : "translateX(100%)"};
   z-index: 5;
+
   ul {
     list-style-type: none;
   }
+
   li {
     margin-top: 1rem;
   }
+
   a {
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
     transition: color 300ms;
+
     :hover {
       color: red;
     }
   }
+
   .burger-menu__MenuLinks-sc-ldpbp6-2 eUfsKI {
     z-index: 10;
   }
