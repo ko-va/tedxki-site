@@ -17,7 +17,7 @@ const MenuIcon = styled.button`
   background: transparent;
   border: none;
   cursor: pointer;
-  z-index: 5;
+  z-index: 10;
   div {
     width: 1.5rem;
     height: .2rem;
@@ -51,6 +51,7 @@ const MenuLinks = styled.nav`
   right: 0;
   transition: transform 300ms;
   transform: ${({nav}) => nav ? "translateX(0)": "translateX(100%)" };
+  z-index: 5;
   ul {
     list-style-type: none;
   }
@@ -65,6 +66,9 @@ const MenuLinks = styled.nav`
     :hover {
       color: red;
     }
+  }
+  .burger-menu__MenuLinks-sc-ldpbp6-2 eUfsKI {
+    z-index: 10;
   }
 `
 
