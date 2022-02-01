@@ -43,7 +43,7 @@ body {
 
 }
 
-#___gatsby {
+body >  div {
   overflow-x: hidden;
 }
 
