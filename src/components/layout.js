@@ -11,7 +11,7 @@ class Template extends React.Component {
     const { children } = this.props
 
     return (
-      <div style={{ overflowX: 'hidden' }}>
+      <div className="after body">
         <Seo />
         <Navigation />
         <main>{children}</main>
