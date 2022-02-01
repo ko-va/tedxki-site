@@ -33,7 +33,7 @@
   }
 
   .item1 > div{
-    margin: 2rem;
+    margin-bottom: 2rem;
   }
 
 }
@@ -42,6 +42,10 @@
 @media (min-width: 767px) {
   .item1 {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .item2 {
+    margin: 5rem;
   }
 
 }
