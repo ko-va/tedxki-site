@@ -11,7 +11,7 @@ const Footer = () => (
       <div className={styles.item1}>
         <div className="contact-us__form sub-item sub-item-1">
           <p>Contact Us</p>
-          <Link to="mailto:contact@tedxki.com"><span>contact@tedxki.com</span></Link>
+          <Link href="mailto:contact@tedxki.com"><span>contact@tedxki.com</span></Link>
         </div>
 
         <div className={styles.social_icons}>
