@@ -1,16 +1,23 @@
 import React from "react";
-import { StaticImage } from 'gatsby-plugin-image'
 
 import Layout from '../components/layout'
 import Container from '../components/container'
 
 import * as styles from './about.module.css'
+import { Parallax } from 'react-parallax'
+import image3 from "../../static/images/about.jpg"
 
 export default function AboutPage() {
 
   return (
     <Layout>
-      <StaticImage src="../../static/images/about.jpg" alt="about" />
+      <div  className={styles.hero_image}>
+        <Parallax bgImage={image3} strength={200}>
+          <div style={{ height: 700 }} />
+        </Parallax>
+      </div>
+
+      <Parallax>
       <Container>
         <div className={styles.container}>
           <div>
@@ -62,6 +69,7 @@ export default function AboutPage() {
         </div>
 
       </Container>
+      </Parallax>
     </Layout>
   )
 };
