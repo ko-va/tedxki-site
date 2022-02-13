@@ -5,3 +5,7 @@
   padding: 0 1rem;
 
 }
+
+.not_active {
+  color: var(--inactive);
+}

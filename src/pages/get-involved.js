@@ -31,13 +31,16 @@ export default function GetInvolvedPage() {
           </div>
 
           <div className="home-page__subtitle">
-            <span><h6>Nominate a speaker or a <Link href="#">performer ></Link></h6></span>
+            <span className={styles.not_active}><h6>Nominate a speaker or a performer ></h6></span>
+            <p>
+              Our speaker and performer lineup for our 2022 event is currently complete. Please follow us on our social media for updates on future events’ speaker and performer recruitment.
+            </p>
           </div>
 
           <div className="home-page__subtitle">
-            <span><h6>Join the next event's team ></h6></span>
+            <span className={styles.not_active}><h6>Join the next event's team ></h6></span>
             <p>
-              Positions on the teams become available each year and as needed. <br />
+              Positions on the teams become available each year and as needed. Stay tuned for upcoming team recruitment in fall 2022. <br />
               Depending on your experience and skills, there may be a team where you can contribute the most. We are looking for passionate people about TED, who have experience organizing events/activities/groups, and working in a multicultural environment.
 
             </p>

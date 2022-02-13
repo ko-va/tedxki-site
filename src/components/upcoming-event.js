@@ -46,13 +46,13 @@ export default function UpcomingEventSection() {
           But what if we're stuck in reality?
         </h4>
         <p>
-          Today more than ever, we are aware that sometimes we need to <span><Link to="https://www.instagram.com/p/CZRVKKIMhqL/" target="_blank" rel="noreferrer">#reload</Link></span>, <span>#recharge</span> or <span>#refresh</span> our lives, environment, and system.
+          Today more than ever, we are aware that sometimes we need to <span><Link to="https://www.instagram.com/p/CZRVKKIMhqL/" target="_blank" rel="noreferrer">#reload</Link></span>, <span><Link to="https://www.instagram.com/p/CZzp1QzFmD5/" target="_blank" rel="noreferrer">#recharge</Link></span> or <span>#refresh</span> our lives, environment, and system.
           <br/>We are stuck between global crises like the pandemic, recession and climate change.
           <br/>But, we are also in control of updating old systems to new realities!
         </p>
         <p>
           Let's have a <span>#realtalk</span> about how we can create new beginnings and reinvent ourselves.<br />
-          With our brilliant speakers, dive in and hear stories that show true power and faith to <span><Link to="https://www.instagram.com/p/CZRVKKIMhqL/" target="_blank" rel="noreferrer">#reload</Link></span>, <span>#recharge</span>, and <span>#refresh</span>.
+          With our brilliant speakers, dive in and hear stories that show true power and faith to <span><Link to="https://www.instagram.com/p/CZRVKKIMhqL/" target="_blank" rel="noreferrer">#reload</Link></span>, <span><Link to="https://www.instagram.com/p/CZzp1QzFmD5/" target="_blank" rel="noreferrer">#recharge</Link></span>, and <span>#refresh</span>.
         </p>
 
         <DateTimeLocation />
