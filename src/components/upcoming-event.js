@@ -72,7 +72,7 @@ export default function UpcomingEventSection() {
                 <div className={styles.speaker_info} style={{ direction: 'ltr' }}>
                   <h4><Link to={edge.node.linkedInProfileLink} target="_blank" rel="noreferrer">{edge.node.speakersName}</Link></h4>
                   <p className={styles.job_title}>{edge.node.jobTitle}</p>
-                  <p>
+                  <p className={styles.speaker_bio}>
                     {edge.node.speakersBio.childMarkdownRemark.internal.content}
                   </p>
                 </div>
