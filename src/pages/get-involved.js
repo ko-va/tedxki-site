@@ -24,7 +24,7 @@ export default function GetInvolvedPage() {
           </h4>
 
           <div className="home-page__subtitle">
-            <h6><span><Link href="mailto:contact@tedxki.com">Become a volunteer ></Link></span></h6>
+            <h6><span><Link to="https://forms.gle/q3EBzJq4U5ugTnLL7" target="_blank">Become a volunteer ></Link></span></h6>
             <p>
               Fantastic that you would like to volunteer for TEDxKI and contribute to the community! Helpers are people from the KI community who provide additional support on the day of the event. Anyone can volunteer, and opportunities will be announced a few weeks before the event. Helpers are essential in smoothly organizing the event by helping team members and inspiring guests with enthusiasm.
             </p>
