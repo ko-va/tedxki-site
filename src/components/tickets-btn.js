@@ -9,9 +9,9 @@ export default function TicketsBtn() {
   return (
     <button className={styles.button}>
       <a href='https://fienta.com/sv/tedxki' target='blank'>
-        <p>Get</p>
-        <p>Your</p>
-        <p>Ticket</p>
+        <p className={styles.text}>Get</p>
+        <p className={styles.text}>Your</p>
+        <p className={styles.text}>Ticket</p>
       </a>
     </button>
 
