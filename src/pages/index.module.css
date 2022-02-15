@@ -28,6 +28,12 @@ hr {
   font-style: italic;
 }
 
+.intro {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: space-between;
+}
+
 .event_title {
   margin-bottom: 3rem;
 }

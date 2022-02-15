@@ -8,6 +8,8 @@ import Container from '../components/container'
 import DateTimeLocation from '../components/date-time-location'
 import ButtonRed from '../components/button-red'
 import ButtonWhite from '../components/button-white'
+import TicketsBtn from '../components/tickets-btn'
+
 
 import * as styles from './index.module.css'
 
@@ -28,9 +30,12 @@ export default function HomePage({ data }) {
       <Container>
         <div className={styles.container}>
           <div className={styles.section}>
-            <h5 className={styles.coming_up}>
-              <span>COMING UP</span>
-            </h5>
+            <div className={styles.intro}>
+              <h5 className={styles.coming_up}>
+                <span>COMING UP</span>
+              </h5>
+              <TicketsBtn />
+            </div>
             <div className={styles.event_title}>
               <h1 className="upcoming-event__title">
                 CTRL+R:
