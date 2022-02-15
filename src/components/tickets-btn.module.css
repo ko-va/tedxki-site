@@ -13,7 +13,7 @@
   line-height: 10px;
 }
 
-.button > a:hover {
+.button:hover {
   color: red;
 }
 

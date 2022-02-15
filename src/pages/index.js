@@ -34,7 +34,7 @@ export default function HomePage({ data }) {
               <h5 className={styles.coming_up}>
                 <span>COMING UP</span>
               </h5>
-              <TicketsBtn />
+              <TicketsBtn style={{ position: 'sticky' }}/>
             </div>
             <div className={styles.event_title}>
               <h1 className="upcoming-event__title">
