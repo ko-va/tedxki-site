@@ -41,6 +41,25 @@
   text-align: justify;
 }
 
+.performers {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.performer {
+  display: grid;
+  grid-template-rows: max-content min-content;
+  justify-content: center;
+  text-align: center;
+}
+
+.performer_photo {
+  width: 300px;
+  height: 317px;
+
+}
+
 @media only screen and (min-width: 768px) {
   .speaker {
     display: grid;
@@ -48,6 +67,11 @@
     grid-gap: 100px;
     align-items: center;
   }
+
+  .performers {
+    grid-template-columns: repeat(3, 289px);
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {

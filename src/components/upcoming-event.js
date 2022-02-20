@@ -31,6 +31,28 @@ export default function UpcomingEventSection() {
           }
         }
       }
+      allContentfulCtrlRPerformers {
+        edges {
+          node {
+            speakersPhoto {
+              fluid(maxWidth: 317) {
+                ...GatsbyContentfulFluid
+              }
+            }
+            jobTitle
+            speakersName
+            speakersBio {
+              childMarkdownRemark {
+                internal {
+                  content
+                }
+              }
+            }
+            linkedInProfileLink
+          }
+        }
+      }
+
     }
   `);
 
@@ -59,7 +81,6 @@ export default function UpcomingEventSection() {
       </div>
 
       <div className={styles.speakers_container}>
-
           <h1>SPEAKERS</h1>
           {data.allContentfulCtrlRSpeakers.edges.map((edge, i) => {
             return (
@@ -80,6 +101,30 @@ export default function UpcomingEventSection() {
               </div>
             )
           })}
+      </div>
+
+      <div className={styles.speakers_container}>
+        <h1>PERFORMERS</h1>
+        <div className={styles.performers}>
+          {data.allContentfulCtrlRPerformers.edges.map(edge => {
+            return (
+              <div className={styles.performer}>
+                <Img
+                  className={styles.performer_photo}
+                  fluid={edge.node.speakersPhoto.fluid}
+                  alt={edge.node.speakersName}
+                />
+                <div className={styles.speaker_info}>
+                  <h4>{edge.node.speakersName}</h4>
+                  <p>
+                    {edge.node.speakersBio.childMarkdownRemark.internal.content}
+                  </p>
+                </div>
+
+              </div>
+            )
+          })}
+        </div>
       </div>
     </div>
   )

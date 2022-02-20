@@ -8,6 +8,32 @@ export default function SponsorsDisplay() {
 
   const data = useStaticQuery(graphql`
     query {
+      allContentfulSponsorsPage {
+    edges {
+      node {
+        internal {
+          content
+          description
+          ignoreType
+          mediaType
+        }
+        parent {
+          id
+          children {
+            id
+            ... on File {
+              id
+              childImageSharp {
+                fluid {
+                  base64
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
       allContentfulSponsors {
         edges {
           node {
@@ -24,8 +50,11 @@ export default function SponsorsDisplay() {
     }
   `);
 
+  console.log(data.allContentfulSponsorsPage)
+
   return (
       <div className={styles.container}>
+
         {data.allContentfulSponsors.edges.map(edge => {
           return (
             <Link to={edge.node.sponsorsWebsite} target="_blank" rel="noreferrer">
