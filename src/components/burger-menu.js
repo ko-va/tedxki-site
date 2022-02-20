@@ -88,6 +88,7 @@ export default function BurgerMenu() {
       </MenuIcon>
       <MenuLinks nav={nav}>
         <ul>
+          <li><Link to="https://fienta.com/sv/tedxki" target="_blank" rel="noreferrer">Tickets</Link></li>
           <li><Link to="/events">Events</Link></li>
           <li><Link to="/sponsors">Sponsors</Link></li>
           <li><Link to="/videos">Videos</Link></li>
