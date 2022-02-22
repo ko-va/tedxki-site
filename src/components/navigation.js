@@ -38,11 +38,6 @@ export default function Navigation() {
       {width > breakPoint? (
         <ul className={styles.navigation}>
           <li className={styles.navigationItem}>
-            <Link to="https://fienta.com/sv/tedxki" activeClassName="active" target="_blank" rel="noreferrer">
-              Tickets
-            </Link>
-          </li>
-          <li className={styles.navigationItem}>
             <Link to="/events/" activeClassName="active">
               Events
             </Link>

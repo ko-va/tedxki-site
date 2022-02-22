@@ -8,11 +8,8 @@ export default function TicketsBtn() {
 
   return (
     <button className={styles.button}>
-      <a href='https://fienta.com/sv/tedxki' target='blank'>
-        <p className={styles.text}>Get</p>
-        <p className={styles.text}>Your</p>
-        <p className={styles.text}>Ticket</p>
-      </a>
+        <p className={styles.text}>Sold</p>
+        <p className={styles.text}>Out</p>
     </button>
 
 

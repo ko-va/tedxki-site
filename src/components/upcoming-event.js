@@ -68,7 +68,7 @@ export default function UpcomingEventSection() {
           But what if we're stuck in reality?
         </h4>
         <p>
-          Today more than ever, we are aware that sometimes we need to <span><Link to="https://www.instagram.com/p/CZRVKKIMhqL/" target="_blank" rel="noreferrer">#reload</Link></span>, <span><Link to="https://www.instagram.com/p/CZzp1QzFmD5/" target="_blank" rel="noreferrer">#recharge</Link></span> or <span>#refresh</span> our lives, environment, and system.
+          Today more than ever, we are aware that sometimes we need to <span><Link to="https://www.instagram.com/p/CZRVKKIMhqL/" target="_blank" rel="noreferrer">#reload</Link></span>, <span><Link to="https://www.instagram.com/p/CZzp1QzFmD5/" target="_blank" rel="noreferrer">#recharge</Link></span> or <span><Link to="https://www.instagram.com/p/CZ7U_4bgw9h/" target="_blank" rel="noreferrer">#refresh</Link></span> our lives, environment, and system.
           <br/>We are stuck between global crises like the pandemic, recession and climate change.
           <br/>But, we are also in control of updating old systems to new realities!
         </p>
@@ -116,7 +116,8 @@ export default function UpcomingEventSection() {
                 />
                 <div className={styles.speaker_info}>
                   <h4>{edge.node.speakersName}</h4>
-                  <p>
+                  <p className={styles.job_title}>{edge.node.jobTitle}</p>
+                  <p className={styles.speaker_bio}>
                     {edge.node.speakersBio.childMarkdownRemark.internal.content}
                   </p>
                 </div>
