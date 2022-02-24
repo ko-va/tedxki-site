@@ -8,57 +8,89 @@ export default function SponsorsDisplay() {
 
   const data = useStaticQuery(graphql`
     query {
-      allContentfulSponsorsPage {
-    edges {
-      node {
-        internal {
-          content
-          description
-          ignoreType
-          mediaType
-        }
-        parent {
-          id
-          children {
-            id
-            ... on File {
-              id
-              childImageSharp {
-                fluid {
-                  base64
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-      allContentfulSponsors {
+      allContentfulSponsors1 {
         edges {
           node {
-            sponsorsLogo {
+            logo {
               fluid(maxHeight: 150) {
                 ...GatsbyContentfulFluid
               }
             }
-            sponsorsWebsite
-            sponsorsName
+            website
+            name
+          }
+        }
+      }
+      allContentfulSponsors2 {
+        edges {
+          node {
+            logo {
+              fluid(maxHeight: 150) {
+                ...GatsbyContentfulFluid
+              }
+            }
+            website
+            name
+          }
+        }
+      }
+      allContentfulSponsors3 {
+        edges {
+          node {
+            logo {
+              fluid(maxHeight: 150) {
+                ...GatsbyContentfulFluid
+              }
+            }
+            website
+            name
+          }
+        }
+      }
+      allContentfulSponsors4 {
+        edges {
+          node {
+            logo {
+              fluid(maxHeight: 150) {
+                ...GatsbyContentfulFluid
+              }
+            }
+            website
+            name
           }
         }
       }
     }
   `);
 
-  console.log(data.allContentfulSponsorsPage)
-
   return (
       <div className={styles.container}>
 
-        {data.allContentfulSponsors.edges.map(edge => {
+        {data.allContentfulSponsors1.edges.map(edge => {
           return (
-            <Link to={edge.node.sponsorsWebsite} target="_blank" rel="noreferrer">
-              <Img className={styles.logo} alt={edge.node.sponsorsName} fluid={edge.node.sponsorsLogo.fluid} />
+            <Link to={edge.node.website} target="_blank" rel="noreferrer">
+              <Img className={styles.logo} alt={edge.node.name} fluid={edge.node.logo.fluid} />
+            </Link>
+          )
+        })}
+        {data.allContentfulSponsors2.edges.map(edge => {
+          return (
+            <Link to={edge.node.website} target="_blank" rel="noreferrer">
+              <Img className={styles.logo} alt={edge.node.name} fluid={edge.node.logo.fluid} />
+            </Link>
+          )
+        })}
+        {data.allContentfulSponsors3.edges.map(edge => {
+          return (
+            <Link to={edge.node.website} target="_blank" rel="noreferrer">
+              <Img className={styles.logo} alt={edge.node.name} fluid={edge.node.logo.fluid} />
+            </Link>
+          )
+        })}
+        {data.allContentfulSponsors4.edges.map(edge => {
+          return (
+            <Link to={edge.node.website} target="_blank" rel="noreferrer">
+              <Img className={styles.logo} alt={edge.node.name} fluid={edge.node.logo.fluid} />
             </Link>
           )
         })}
