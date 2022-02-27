@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEllipsisH } from '@fortawesome/free-solid-svg-icons'
 
 import Layout from '../components/layout'
 import Container from '../components/container'
@@ -29,7 +29,7 @@ export default function SpeakersPage({ data }) {
                   />
                   <div className={styles.speaker_info}>
                     <h6>{edge.node.fullName}</h6>
-                    <a href={edge.node.linkedInProfileLink} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} className="fas fa-camera fa-2x"/></a>
+                    <a href={edge.node.linkedInProfileLink} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faEllipsisH} className="fas fa-camera fa-2x"/></a>
                   </div>
                 </div>
               )
