@@ -12,7 +12,7 @@ export default function SponsorsDisplay() {
         edges {
           node {
             logo {
-              fluid(maxHeight: 150) {
+              fluid(maxHeight: 300) {
                 ...GatsbyContentfulFluid
               }
             }

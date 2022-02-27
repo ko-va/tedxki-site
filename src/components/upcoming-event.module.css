@@ -44,7 +44,7 @@
 .performers {
   margin-top: 3rem;
   display: grid;
-  grid-template-rows: auto;
+
 }
 
 .performer {
@@ -69,7 +69,8 @@
   }
 
   .performers {
-    grid-template-columns: repeat(3, 289px);
+    grid-template-columns: repeat(2, 300px);
+    grid-gap: 2rem;
   }
 
 }
