@@ -64,36 +64,46 @@ export default function SponsorsDisplay() {
   `);
 
   return (
-      <div className={styles.container}>
+      <div>
+        <div className={styles.container1}>
+          {data.allContentfulSponsors1.edges.map(edge => {
+            return (
+              <Link to={edge.node.website} target="_blank" rel="noreferrer">
+                <Img className={styles.logo} alt={edge.node.name} fluid={edge.node.logo.fluid} />
+              </Link>
+            )
+          })}
+        </div>
 
-        {data.allContentfulSponsors1.edges.map(edge => {
-          return (
-            <Link to={edge.node.website} target="_blank" rel="noreferrer">
-              <Img className={styles.logo} alt={edge.node.name} fluid={edge.node.logo.fluid} />
-            </Link>
-          )
-        })}
-        {data.allContentfulSponsors2.edges.map(edge => {
-          return (
-            <Link to={edge.node.website} target="_blank" rel="noreferrer">
-              <Img className={styles.logo} alt={edge.node.name} fluid={edge.node.logo.fluid} />
-            </Link>
-          )
-        })}
-        {data.allContentfulSponsors3.edges.map(edge => {
-          return (
-            <Link to={edge.node.website} target="_blank" rel="noreferrer">
-              <Img className={styles.logo} alt={edge.node.name} fluid={edge.node.logo.fluid} />
-            </Link>
-          )
-        })}
-        {data.allContentfulSponsors4.edges.map(edge => {
-          return (
-            <Link to={edge.node.website} target="_blank" rel="noreferrer">
-              <Img className={styles.logo} alt={edge.node.name} fluid={edge.node.logo.fluid} />
-            </Link>
-          )
-        })}
+        <div className={styles.container2}>
+          {data.allContentfulSponsors2.edges.map(edge => {
+            return (
+              <Link to={edge.node.website} target="_blank" rel="noreferrer">
+                <Img className={styles.logo} alt={edge.node.name} fluid={edge.node.logo.fluid} />
+              </Link>
+            )
+          })}
+        </div>
+
+        <div className={styles.container3}>
+          {data.allContentfulSponsors3.edges.map(edge => {
+            return (
+              <Link to={edge.node.website} target="_blank" rel="noreferrer">
+                <Img className={styles.logo} alt={edge.node.name} fluid={edge.node.logo.fluid} />
+              </Link>
+            )
+          })}
+        </div>
+
+        <div className={styles.container4}>
+          {data.allContentfulSponsors4.edges.map(edge => {
+            return (
+              <Link to={edge.node.website} target="_blank" rel="noreferrer">
+                <Img className={styles.logo} alt={edge.node.name} fluid={edge.node.logo.fluid} />
+              </Link>
+            )
+          })}
+        </div>
       </div>
   )
 
