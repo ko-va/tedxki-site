@@ -1,6 +1,6 @@
 .container1 {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 260px);
+  grid-template-columns: repeat(auto-fill, 320px);
   grid-template-rows: repeat(auto-fill, 350px);
   grid-gap: 3rem;
   align-items: center;
@@ -20,7 +20,7 @@
 
 .container3 {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 180px);
+  grid-template-columns: repeat(auto-fill, 200px);
   grid-template-rows: repeat(auto-fill, 350px);
   grid-gap: 3rem;
   align-items: center;

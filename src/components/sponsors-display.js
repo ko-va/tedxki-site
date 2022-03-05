@@ -47,7 +47,59 @@ export default function SponsorsDisplay() {
           }
         }
       }
-      allContentfulSponsors4 {
+      allContentfulTeamGoodieBag1 {
+        edges {
+          node {
+            logo {
+              fluid(maxHeight: 150) {
+                ...GatsbyContentfulFluid
+              }
+            }
+            website
+            name
+          }
+        }
+      }
+      allContentfulTeamGoodieBag2 {
+        edges {
+          node {
+            logo {
+              fluid(maxHeight: 150) {
+                ...GatsbyContentfulFluid
+              }
+            }
+            website
+            name
+          }
+        }
+      }
+      allContentfulTeamGoodieBag3 {
+        edges {
+          node {
+            logo {
+              fluid(maxHeight: 150) {
+                ...GatsbyContentfulFluid
+              }
+            }
+            website
+            name
+          }
+        }
+      }
+      allContentfulTeamGoodieBag4 {
+        edges {
+          node {
+            logo {
+              fluid(maxHeight: 150) {
+                ...GatsbyContentfulFluid
+              }
+            }
+            website
+            name
+          }
+        }
+      }
+      allContentfulTeamGoodieBag5 {
         edges {
           node {
             logo {
@@ -96,7 +148,35 @@ export default function SponsorsDisplay() {
         </div>
 
         <div className={styles.container4}>
-          {data.allContentfulSponsors4.edges.map(edge => {
+          {data.allContentfulTeamGoodieBag1.edges.map(edge => {
+            return (
+              <Link to={edge.node.website} target="_blank" rel="noreferrer">
+                <Img className={styles.logo} alt={edge.node.name} fluid={edge.node.logo.fluid} />
+              </Link>
+            )
+          })}
+          {data.allContentfulTeamGoodieBag2.edges.map(edge => {
+            return (
+              <Link to={edge.node.website} target="_blank" rel="noreferrer">
+                <Img className={styles.logo} alt={edge.node.name} fluid={edge.node.logo.fluid} />
+              </Link>
+            )
+          })}
+          {data.allContentfulTeamGoodieBag3.edges.map(edge => {
+            return (
+              <Link to={edge.node.website} target="_blank" rel="noreferrer">
+                <Img className={styles.logo} alt={edge.node.name} fluid={edge.node.logo.fluid} />
+              </Link>
+            )
+          })}
+          {data.allContentfulTeamGoodieBag4.edges.map(edge => {
+            return (
+              <Link to={edge.node.website} target="_blank" rel="noreferrer">
+                <Img className={styles.logo} alt={edge.node.name} fluid={edge.node.logo.fluid} />
+              </Link>
+            )
+          })}
+          {data.allContentfulTeamGoodieBag5.edges.map(edge => {
             return (
               <Link to={edge.node.website} target="_blank" rel="noreferrer">
                 <Img className={styles.logo} alt={edge.node.name} fluid={edge.node.logo.fluid} />
