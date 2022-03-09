@@ -1,7 +1,7 @@
 .container1 {
   display: grid;
   grid-template-columns: repeat(auto-fill, 320px);
-  grid-template-rows: repeat(auto-fill, 350px);
+  grid-template-rows: repeat(auto-fill, 300px);
   grid-gap: 3rem;
   align-items: center;
   height: max-content;
@@ -11,7 +11,7 @@
 .container2 {
   display: grid;
   grid-template-columns: repeat(auto-fill, 220px);
-  grid-template-rows: repeat(auto-fill, 350px);
+  grid-template-rows: repeat(auto-fill, 300px);
   grid-gap: 3rem;
   align-items: center;
   height: max-content;
@@ -21,7 +21,7 @@
 .container3 {
   display: grid;
   grid-template-columns: repeat(auto-fill, 200px);
-  grid-template-rows: repeat(auto-fill, 350px);
+  grid-template-rows: repeat(auto-fill, 300px);
   grid-gap: 3rem;
   align-items: center;
   height: max-content;
@@ -31,7 +31,7 @@
 .container4 {
   display: grid;
   grid-template-columns: repeat(auto-fill, 140px);
-  grid-template-rows: repeat(auto-fill, 350px);
+  grid-template-rows: repeat(auto-fill, 300px);
   grid-gap: 3rem;
   align-items: center;
   height: max-content;
