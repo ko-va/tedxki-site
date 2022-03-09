@@ -12,8 +12,28 @@
   font-weight: var(--bold);
 }
 
+.team {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 4rem;
+  margin-top: 5rem;
+}
+
+.group {
+  border-radius: 20%;
+  transition: all .4s ease-in-out;
+  margin: 10px;
+}
+
+.group:hover {
+  transform: scale(1.05)
+}
+
+
+
 @media (max-width: 768px) {
   .hero_image {
     display: none;
   }
+
 }

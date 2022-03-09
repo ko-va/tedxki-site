@@ -6,6 +6,10 @@ import Container from '../components/container'
 import * as styles from './about.module.css'
 import { Parallax } from 'react-parallax'
 import image3 from "../../static/images/about.jpg"
+import image5 from "../../static/images/41.png"
+import image6 from "../../static/images/48.png"
+import image7 from "../../static/images/55.png"
+import image8 from "../../static/images/65.png"
 
 export default function AboutPage() {
 
@@ -64,10 +68,23 @@ export default function AboutPage() {
               <span>Twitter</span></a> and <a href="http://www.facebook.com/TED" target="_blank" rel="noreferrer">
               <span>Facebook</span></a>
             </p>
+          </div>
 
+          <div className={styles.team}>
+            <div>
+              <a href={'https://www.instagram.com/p/CakuLidA6a1/'} rel="noreferrer" target={'_blank'}><img alt="team" className={styles.group} src={image5}/></a>
+            </div>
+            <div>
+              <a href={'https://www.instagram.com/p/CasQoelABaA/'} rel="noreferrer" target={'_blank'}><img alt="team" className={styles.group} src={image8} /></a>
+            </div>
+            <div>
+              <a href={'https://www.instagram.com/p/CaphndCgqr8/'} rel="noreferrer" target={'_blank'}><img alt="team" className={styles.group} src={image6} /></a>
+            </div>
+            <div>
+              <a href={'https://www.instagram.com/p/CanD9wBAUiy/'} rel="noreferrer" target={'_blank'}><img alt="team" className={styles.group} src={image7} /></a>
+            </div>
           </div>
         </div>
-
       </Container>
       </Parallax>
     </Layout>
